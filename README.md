@@ -32,13 +32,15 @@ CRAB is the CRUD model in databases applied to blockchains:
 
 ```bash
 $ npm install bigchaindb-orm
+$ npm install bigchaindb-driver
 ```
 
 ## Usage
 
 ```javascript
 // import bigchaindb-orm
-import Orm from 'bigchaindb-orm'
+const Orm = require("bigchaindb-orm");
+const driver = require('bigchaindb-driver')
 // connect to BigchainDB
 const bdbOrm = new Orm(
     "https://test.ipdb.io/api/v1/",
